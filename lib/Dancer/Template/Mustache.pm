@@ -1,4 +1,10 @@
 package Dancer::Template::Mustache;
+BEGIN {
+  $Dancer::Template::Mustache::AUTHORITY = 'cpan:YANICK';
+}
+{
+  $Dancer::Template::Mustache::VERSION = '0.1.0';
+}
 # ABSTRACT: Wrapper for the Mustache template system
 
 use strict;
@@ -38,6 +44,18 @@ sub render {
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+Dancer::Template::Mustache - Wrapper for the Mustache template system
+
+=head1 VERSION
+
+version 0.1.0
+
 =head1 SYNOPSIS
 
     # in config.yml
@@ -66,5 +84,16 @@ mustached layout would look like:
     <body>
     {{ content }}
     </body>
+
+=head1 AUTHOR
+
+Yanick Champoux <yanick@babyl.dyndns.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
