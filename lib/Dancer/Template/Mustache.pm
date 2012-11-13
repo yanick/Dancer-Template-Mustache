@@ -67,4 +67,8 @@ mustached layout would look like:
     {{ content }}
     </body>
 
+=head1 SEE ALSO
+
+The Mustache templating system: L<http://mustache.github.com/>
+
 =cut

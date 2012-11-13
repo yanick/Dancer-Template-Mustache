@@ -1,7 +1,21 @@
 Revision history for Dancer-Template-Mustache
 
 {{$NEXT}}
+ [API CHANGES]
 
-0.1.0     2012-10-28
+ [BUG FIXES]
 
-  - First version, unleashed on an unsuspecting world.
+ [DOCUMENTATION]
+ - Add link to Mustache itself.
+
+ [ENHANCEMENTS]
+
+ [NEW FEATURES]
+
+ [STATISTICS]
+
+0.1.0 2012-10-28
+ - First version, unleashed on an unsuspecting world.
+
+ [STATISTICS]
+ - code churn: 11 files changed, 204 insertions(+), 5 deletions(-)
