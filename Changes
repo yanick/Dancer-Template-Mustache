@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mustache
 
 {{$NEXT}}
+
+0.1.1     2012-11-12
  [API CHANGES]
 
  [BUG FIXES]
