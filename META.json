@@ -1,0 +1,79 @@
+{
+   "abstract" : "Wrapper for the Mustache template system",
+   "author" : [
+      "Yanick Champoux <yanick@babyl.dyndns.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dancer-Template-Mustache",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "version" : "0.9901"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dancer::Config" : "0",
+            "Dancer::Template::Abstract" : "0",
+            "Template::Mustache" : "0",
+            "base" : "0",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Dancer" : "0",
+            "Dancer::FileUtils" : "0",
+            "Dancer::Test" : "0",
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "FindBin" : "0",
+            "Test::More" : "0.88"
+         }
+      }
+   },
+   "provides" : {
+      "Dancer::Template::Mustache" : {
+         "file" : "lib/Dancer/Template/Mustache.pm",
+         "version" : "v0.1.1"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-dancer-template-mustache at rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Template-Mustache"
+      },
+      "homepage" : "http://search.cpan.org/dist/Dancer-Template-Mustache/",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/yanick/Dancer-Template-Mustache.git",
+         "web" : "https://github.com/yanick/Dancer-Template-Mustache"
+      }
+   },
+   "version" : "0.1.1",
+   "x_author_pledge" : {
+      "version" : 1
+   },
+   "x_authority" : "cpan:YANICK"
+}
+
