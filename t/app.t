@@ -8,7 +8,10 @@ use Test::More tests => 4;
 
     use Dancer ':syntax';
 
-    set views => 't/app_views';
+    set views => 't/views';
+
+    set show_errors => 1;
+    set traces => 1;
 
     set engines => {
         mustache => { 
@@ -32,7 +35,7 @@ use Test::More tests => 4;
     };
 }
 
-use Dancer::Test;
+use Dancer::Test 'MyApp';
 
 response_content_like [ GET => '/' ], qr/Welcome manly mustached man/, 
     "template file found";

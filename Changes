@@ -1,20 +1,22 @@
 Revision history for Dancer-Template-Mustache
 
 {{$NEXT}}
-
-0.1.1     2012-11-12
  [API CHANGES]
 
  [BUG FIXES]
 
- [DOCUMENTATION]
- - Add link to Mustache itself.
-
  [ENHANCEMENTS]
+ - Now Dancer 2 compatible
 
  [NEW FEATURES]
 
  [STATISTICS]
+
+
+0.1.1     2012-11-12
+ [DOCUMENTATION]
+ - Add link to Mustache itself.
+
 
 0.1.0 2012-10-28
  - First version, unleashed on an unsuspecting world.

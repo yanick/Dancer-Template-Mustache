@@ -11,7 +11,7 @@ eval { $engine = Dancer::Template::Mustache->new };
 is $@, '', "Dancer::Template::Mustache engine created";
 
 my $result = $engine->render(
-    'index.mustache',
+    'basic.mustache',
     { style => 'handlebar' }
 );
 
