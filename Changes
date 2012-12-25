@@ -17,6 +17,8 @@ Revision history for Dancer-Template-Mustache
  [DOCUMENTATION]
  - Add link to Mustache itself.
 
+ [STATISTICS]
+ - code churn: 13 files changed, 231 insertions(+), 7 deletions(-)
 
 0.1.0 2012-10-28
  - First version, unleashed on an unsuspecting world.

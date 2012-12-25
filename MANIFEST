@@ -14,11 +14,11 @@ t/00-compile.t
 t/000-report-versions-tiny.t
 t/01-basic.t
 t/app.t
-t/app_views/goatee.mustache
-t/app_views/index.mustache
-t/app_views/partial.mustache
 t/layout.t
-t/layout_views/index.mustache
-t/layout_views/layouts/face.mustache
+t/views/basic.mustache
+t/views/goatee.mustache
 t/views/index.mustache
+t/views/layout.mustache
+t/views/layouts/face.mustache
+t/views/partial.mustache
 xt/release/unused-vars.t
