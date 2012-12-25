@@ -1,0 +1,46 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 1ed4ad5b8b8aaef6ab6f526a99f93c5cec3398ea AUTHOR_PLEDGE
+SHA1 9500734b2894651b12104ca2b709595b7557c29d Build.PL
+SHA1 dee2817032816eaa60a01fc678d745ca01d40dff Changes
+SHA1 190bd684dda30feb4c0f02de7fbbd7b034bafd81 INSTALL
+SHA1 42a9b278ca94a31df654fec186efe74ba9565d7e LICENSE
+SHA1 142a7ae2dd3bc02c776fbd705acf88e0c40bfc11 MANIFEST
+SHA1 f0ddd9ff890b6005368c41fbab6b9ba2862924f0 META.json
+SHA1 bb6d06d7e562d3cbb4a7e226723abed81010989c META.yml
+SHA1 45ac2602b6f02c34864b85250a773f0146288b29 README
+SHA1 f2e99cf5df86698a1fdec2b950fbe7fb4ebab1df README.mkdn
+SHA1 1571f50e0797c5542c4ae65dce5868924151c3b4 lib/Dancer/Template/Mustache.pm
+SHA1 3cbe905b92fbc69d59a06031d5ce6c837b352aa2 t/00-compile.t
+SHA1 8136f5f02031eaa31b062b60b57a6fcfb2fb1cb6 t/000-report-versions-tiny.t
+SHA1 ba0c4dfa2bf1af7b20939f171269289cf0004655 t/01-basic.t
+SHA1 095546e592df5e9c95f205ee4dfb24f485886181 t/app.t
+SHA1 5156d43756dafdf2343f9458b6a6efbab1abd248 t/layout.t
+SHA1 23421fba5d90a9b56e4b7ccab14d684f89f66a03 t/views/basic.mustache
+SHA1 9ae22869553bb63a4f4133b33d9b0e315b842f7e t/views/goatee.mustache
+SHA1 4c586efa9940e7e4819f4048e2f7fe456776383e t/views/index.mustache
+SHA1 2de11fc02cf1abbca05c8b7a9ceb31947d75f6e3 t/views/layout.mustache
+SHA1 33eb4e977d09a819a874bd807a63c799d1519caa t/views/layouts/face.mustache
+SHA1 d7f17cb3b128fabcfe922ef26545dc70af200bb4 t/views/partial.mustache
+SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAlDY/BkACgkQ34Hwf+GwC4xjHQCgzfqrzSO+Q0qFLmpYDd9Le+IU
+LtwAn3z4pcY2g5b7bDdNtCi6yO1jcSW/
+=wD0I
+-----END PGP SIGNATURE-----
