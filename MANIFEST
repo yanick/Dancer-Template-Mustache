@@ -1,5 +1,6 @@
 AUTHOR_PLEDGE
 Build.PL
+CONTRIBUTORS
 Changes
 INSTALL
 LICENSE
@@ -13,7 +14,6 @@ inc/Devel/AssertOS.pm
 inc/Devel/AssertOS/MSWin32.pm
 inc/Devel/CheckOS.pm
 lib/Dancer/Template/Mustache.pm
-t/00-compile.t
 t/000-report-versions-tiny.t
 t/01-basic.t
 t/app.t
