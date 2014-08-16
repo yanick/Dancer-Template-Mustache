@@ -4,16 +4,24 @@ Revision history for Dancer-Template-Mustache
  [API CHANGES]
 
  [BUG FIXES]
- - prevent building for MSWin32 (as it'll fail)
 
  [DOCUMENTATION]
 
  [ENHANCEMENTS]
- - Remove D2 support.
 
  [NEW FEATURES]
 
  [STATISTICS]
+
+0.3.0 2014-08-16
+ [BUG FIXES]
+ - prevent building for MSWin32 (as it'll fail)
+
+ [ENHANCEMENTS]
+ - Remove D2 support.
+
+ [STATISTICS]
+ - code churn: 4 files changed, 24 insertions(+), 19 deletions(-)
 
 0.2.0 2012-12-24
  [ENHANCEMENTS]
