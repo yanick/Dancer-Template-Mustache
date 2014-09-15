@@ -79,7 +79,7 @@ template is sent via the usual I<content> template variable. So a typical
 mustached layout would look like:
 
     <body>
-    {{ content }}
+    {{{ content }}}
     </body>
 
 =head1 SEE ALSO

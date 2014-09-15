@@ -6,6 +6,7 @@ Revision history for Dancer-Template-Mustache
  [BUG FIXES]
 
  [DOCUMENTATION]
+ - Correct the POD for layouts. (GH#1, VinceW)
 
  [ENHANCEMENTS]
 
