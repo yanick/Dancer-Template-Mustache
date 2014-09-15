@@ -86,4 +86,7 @@ mustached layout would look like:
 
 The Mustache templating system: L<http://mustache.github.com/>
 
+L<Dancer::Template::Handlebars> - Dancer support for Handlebars, a templating system
+that is a superset of Mustache.
+
 =cut
