@@ -11,6 +11,8 @@ require Dancer;
 
 use Moo;
 
+use Path::Tiny;
+
 require Dancer::Config;
 Dancer::Config->import( 'setting' );
 
@@ -20,14 +22,6 @@ sub _build_name { 'Dancer::Template::Mustache' }
 
 sub default_tmpl_ext { "mustache" };
 
-has _engine => (
-    is => 'ro',
-    lazy => 1,
-    default => sub {
-        Template::Mustache->new( %{ $_[0]->config } );
-    },
-);
-
 has _template_path => (
     is => 'ro',
     lazy => 1,
@@ -36,19 +30,21 @@ has _template_path => (
     },
 );
 
+my %file_template; # cache for the templates
+
 sub render {
     my ($self, $template, $tokens) = @_;
 
     my $_template_path = $self->_template_path;
 
-    local $Template::Mustache::template_path = $_template_path;
-
     # remove the views part
     $template =~ s#^\Q$_template_path\E/?##;
 
-    local $Template::Mustache::template_file = $template;
-    
-    return $self->_engine->render($tokens);
+    my $mustache = $file_template{$template} ||= Template::Mustache->new(
+        template_path => path( $self->_template_path, $template )
+    );
+
+    return $mustache->render($tokens); 
 }
 
 1;
