@@ -2,6 +2,7 @@ Revision history for Dancer-Template-Mustache
 
 {{$NEXT}}
  [API CHANGES]
+ - Update code to work with Template::Mustache v1.x
 
  [BUG FIXES]
 
