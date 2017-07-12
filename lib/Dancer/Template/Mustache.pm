@@ -4,7 +4,7 @@ package Dancer::Template::Mustache;
 use strict;
 use warnings;
 
-use Template::Mustache;
+use Template::Mustache 1.0.2;
 use FindBin;
 
 require Dancer;

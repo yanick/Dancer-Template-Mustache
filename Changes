@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mustache
 
 {{$NEXT}}
+    - Specify minimum version for Template::Mustache (v1.0.2)
+
   [ API CHANGES ]
 
   [ BUG FIXES ]

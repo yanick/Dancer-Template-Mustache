@@ -2,7 +2,7 @@ requires "Dancer" => "0";
 requires "FindBin" => "0";
 requires "Moo" => "0";
 requires "Path::Tiny" => "0";
-requires "Template::Mustache" => "0";
+requires "Template::Mustache" => "v1.0.2";
 requires "strict" => "0";
 requires "warnings" => "0";
 
