@@ -1,19 +1,10 @@
 Revision history for Dancer-Template-Mustache
 
-{{$NEXT}}
-    - Specify minimum version for Template::Mustache (v1.0.2)
-
-  [ API CHANGES ]
-
-  [ BUG FIXES ]
-
-  [ DOCUMENTATION ]
-
-  [ ENHANCEMENTS ]
-
-  [ NEW FEATURES ]
+1.0.1 2017-07-12
+  - Specify minimum version for Template::Mustache (v1.0.2)
 
   [ STATISTICS ]
+    - code churn: 3 files changed, 38 insertions(+), 29 deletions(-)
 
 1.0.0 2017-07-11
   [ API CHANGES ]
