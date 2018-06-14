@@ -1,6 +1,8 @@
 package Dancer::Template::Mustache;
 # ABSTRACT: Wrapper for the Mustache template system
 
+use 5.10.0;
+
 use strict;
 use warnings;
 
@@ -13,8 +15,7 @@ use Moo;
 
 use Path::Tiny;
 
-require Dancer::Config;
-Dancer::Config->import( 'setting' );
+use Dancer::Config qw/ setting /;
 
 extends 'Dancer::Template::Abstract';
 
@@ -30,6 +31,12 @@ has _template_path => (
     },
 );
 
+has caching => (
+    is => 'ro',
+    lazy => 1,
+    default => sub { $_[0]->config->{cache_templates} // 1 },
+);
+
 my %file_template; # cache for the templates
 
 sub render {
@@ -43,6 +50,8 @@ sub render {
     my $mustache = $file_template{$template} ||= Template::Mustache->new(
         template_path => path( $self->_template_path, $template )
     );
+
+    delete $file_template{$template} unless $self->caching;
 
     return $mustache->render($tokens); 
 }
@@ -77,6 +86,16 @@ mustached layout would look like:
     <body>
     {{{ content }}}
     </body>
+
+=head1 CONFIGURATION
+
+    engines:
+      Mustache:
+        cache_templates: 1
+
+Bu default, the templates are only compiled once when first
+accessed. The caching can be disabling by setting C<cache_templates>
+to C<0>.
 
 =head1 SEE ALSO
 
