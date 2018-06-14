@@ -8,6 +8,7 @@ Revision history for Dancer-Template-Mustache
   [ DOCUMENTATION ]
 
   [ ENHANCEMENTS ]
+  - Add configuration key to disable template caching.
 
   [ NEW FEATURES ]
 
